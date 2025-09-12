@@ -5,35 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Birthday Wishes</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Sparkle Hero -->
   <div class="hero" id="hero">
-    <h1>🎉 Happy Birthday, <span style="color: yellow;">John!</span> 🎂</h1>
+    <h1>🎉 Happy Birthday, <span class="highlight">John!</span> 🎂</h1>
   </div>
 
   <!-- Surprise Section -->
   <div class="section hidden" id="surprise">
-    <p>Wishing you joy, love, and happiness today and always!</p>
+    <h2 class="title">A Special Surprise Awaits 🎁</h2>
+    <p class="subtitle">Wishing you joy, love, and happiness today and always!</p>
 
     <div class="gallery">
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?birthday,party&sig=1" alt="Memory 1"/>
-        <div>
+        <div class="img-container">
+          <img src="https://source.unsplash.com/600x400/?birthday,party&sig=1" alt="Memory 1"/>
+        </div>
+        <div class="card-content">
           <h3>Memory 1</h3>
           <p>Here’s a special wish just for you ✨</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?cake,celebration&sig=2" alt="Memory 2"/>
-        <div>
+        <div class="img-container">
+          <img src="https://source.unsplash.com/600x400/?cake,celebration&sig=2" alt="Memory 2"/>
+        </div>
+        <div class="card-content">
           <h3>Memory 2</h3>
           <p>May your day be filled with sweetness 🎂</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/600x400/?friends,smile&sig=3" alt="Memory 3"/>
-        <div>
+        <div class="img-container">
+          <img src="https://source.unsplash.com/600x400/?friends,smile&sig=3" alt="Memory 3"/>
+        </div>
+        <div class="card-content">
           <h3>Memory 3</h3>
           <p>Cheers to many more happy moments 🎉</p>
         </div>
@@ -44,5 +52,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
-
