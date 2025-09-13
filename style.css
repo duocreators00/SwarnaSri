@@ -158,4 +158,34 @@ body, html {
   transform: translateY(-10px);
   box-shadow: 0 12px 35px rgba(236, 72, 153, 0.4);
 }
+/* Music Notes */
+#music-notes {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.note {
+  position: absolute;
+  font-size: 2rem;
+  color: #ec4899;
+  animation: floatUp 4s linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
 
