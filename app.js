@@ -1,4 +1,3 @@
-// Generate sparkles
 const hero = document.getElementById('hero');
 for (let i = 0; i < 50; i++) {
   const sparkle = document.createElement('div');
@@ -16,3 +15,19 @@ setTimeout(() => {
   document.getElementById('surprise').classList.remove('hidden');
   window.scrollTo({ top: 0, behavior: "smooth" });
 }, 4500);
+
+// Floating music notes 🎵
+function createNote() {
+  const note = document.createElement("div");
+  note.classList.add("note");
+  note.innerText = ["🎵", "🎶", "🎼"][Math.floor(Math.random() * 3)];
+  note.style.left = Math.random() * 100 + "px";
+  document.getElementById("music-notes").appendChild(note);
+
+  setTimeout(() => {
+    note.remove();
+  }, 4000);
+}
+
+// Generate notes every 800ms
+setInterval(createNote, 800);
